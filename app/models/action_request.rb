@@ -1,7 +1,9 @@
 class ActionRequest < ActiveRecord::Base
   belongs_to :target, polymorphic: true
   belongs_to :creator, polymorphic: true
-
+  
+  has_many :statuses, class_name: 'ActionStatus', foreign_key: 'request_id'
+  
   validate :action_type_exists
 
   def action_type_exists
