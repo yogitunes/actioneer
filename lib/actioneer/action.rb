@@ -41,10 +41,10 @@ module Actioneer
       @actions.keys
     end
 
-    def self.perform(name,request)
+    def self.perform(name,request,user)
       the_action = self.action(name)
       throw "Invalid action: #{ name }" unless the_action
-      the_action[:block].call(request)
+      the_action[:block].call(request,user)
     end
   end
 end
