@@ -20,7 +20,7 @@ class ActionRequest < ActiveRecord::Base
     action_class.actions
   end
 
-  def perform action
-    action_class.perform(action,self)
+  def perform(action,user)
+    action_class.perform(action,self,user)
   end
 end
