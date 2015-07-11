@@ -7,11 +7,11 @@ require "actioneer/version"
 Gem::Specification.new do |s|
   s.name        = "actioneer"
   s.version     = Actioneer::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Actioneer."
-  s.description = "TODO: Description of Actioneer."
+  s.authors     = ["Daniel Staudigel"]
+  s.email       = ["daniel@yogitunes.com"]
+  s.homepage    = "http://github.com/yogitunes/actioneer"
+  s.summary     = "Actioneer is a structure for dealing with action requests and actions."
+  s.description = "Actioneer is a structure for dealing with action requests and actions."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
